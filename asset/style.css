@@ -1,22 +1,30 @@
-*{
+body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
 
 }
-/* css for header */
+/* css for header of index.html */
 .top-header{
     width: 100%;
     height: 50px;
+    margin-top: 30px;
     align-items: center;
-    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 h1{
-    margin-left: 40px;
+    
     color: #000;
 }
 h2{
-    color: darkblue;
+    color:darkslategray;
 }
 header a{
     text-decoration: none;
@@ -25,19 +33,52 @@ header a{
     margin: 0 30px;
     margin-top: 50px;
     background-color: chartreuse;
-    border-radius: 20px;
+    border-radius: 6px;
 }
-/* css for :default */
-.imgcontainer{
-    width: 100px;
-    height: 60px;
+.nav-header ul{
+    display: flex;
+    text-align: center;
+    list-style: none;
 }
-.btn-determine{
+.nav-header li a{
+    color: #000;
+    line-height: 16px;
+}
+.nav-header li{
+    margin-right: 20px;
+    padding: 5px 5;
+}
+.nav-header li:hover{
+    background-color: blueviolet;
+}
+
+/* css for defualt-left of default.html */
+
+.d-l-top{
+    color: darkblue;
+    font-size: 16px;
+}
+#eatAnswer{
+    margin-left: 10px;
+}
+.btnDetermine{
     background-color: darkgrey;
     border-radius: 4px;
     border: 1px solid #fff;
 }
-.btn-determine:hover{
+.btnDetermine:hover{
     background-color: darkcyan;
     
+}
+/* css for default-right of default.html */
+.d-r-top{
+    color:maroon;
+    
+}
+.d-r-main #title{
+    color:firebrick;
+}
+.imgcontainer{
+    width: 100px;
+    height: 60px;
 }
